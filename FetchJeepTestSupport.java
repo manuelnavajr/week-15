@@ -4,6 +4,7 @@
 package com.promineotech.jeep.controller.support;
 
 import java.math.BigDecimal;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -25,6 +26,7 @@ public class FetchJeepTestSupport extends BaseTest {
 				.wheelSize(17)
 				.BasePrice(new BigDecimal("28475.00"))
 				.build());
+		
 		list.add(Jeep.builder()
 			.modelId(JeepModel.Wrangler)
 			.trimLevel("Sport")
@@ -35,7 +37,7 @@ public class FetchJeepTestSupport extends BaseTest {
 
 		
 		
-		
+		Collections.sort(list);
 		// formatter:on
 				
 		

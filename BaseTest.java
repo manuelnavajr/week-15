@@ -20,8 +20,19 @@ public class BaseTest {
 	@Autowired
 	@Getter
 	private TestRestTemplate restTemplate;
-	
-	protected String getBaseUri() {
+	/**
+	 * 
+	 * @return
+	 */ 
+	protected String GetBaseURIForJeeps() {
 		return String.format("http://localhost:%d/jeeps", serverPort);
+	
 	}
+	/**
+	 * 
+	 * @return
+	 */
+	protected String GetBaseURIForOrders() {
+		return String.format("http://localhost:%d/orders", serverPort);
+}
 }
